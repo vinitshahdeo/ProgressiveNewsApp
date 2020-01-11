@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Alternative news</title>
+  <title>News Progressive App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="styles.css">
+  <meta name="author" content="Vinit Shahdeo">
+  <meta name="description" content="A Progressive Web App made using NewsAPI.org">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#ffffff" />
 </head>
-
 <body>
   <header>
-    <h1>Alternative news</h1>
-    <select id="sources"></select>
+    <div class="container">
+      <h1>Progressive News App</h1>
+      <h3>Choose from a list of news sources to get the latest popular headlines. Powered by NewsAPI.org!</h3>
+    </div>
   </header>
-  <main></main>
+  <main class="display-area">
+    <select id="news-selector"></select>
+    <div class="story-section visible" id="news-list"></div>
+  </main>
+  <div class="footer">
+    <a href="https://github.com/vinitshahdeo">
+    <i class="fa fa-github"></i> / vinitshahdeo
+    </a>
+  </div>
   <script src="app.js"></script>
 </body>
-
 </html>
+<!-- Made with love by Vinit Shahdeo -->

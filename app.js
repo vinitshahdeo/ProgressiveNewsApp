@@ -1,13 +1,13 @@
-const apiKey = 'cf7f3c64d5b24083b7e9db822088fda1';
-const defaultSource = 'the-washington-post';
-const sourceSelector = document.querySelector('#sources');
-const newsArticles = document.querySelector('main');
+const apiKey = 'cf7f3c64d5b24083b7e9db822088fda1'; // Get API key from NewsAPI.org
+const defaultSource = 'the-hindu'; // default source of news
+const sourceSelector = document.querySelector('#news-selector');
+const newsArticles = document.querySelector('#news-list');
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () =>
-    navigator.serviceWorker.register('sw.js')
-      .then(registration => console.log('Service Worker registered'))
-      .catch(err => 'SW registration failed'));
+    navigator.serviceWorker.register('serviceWorker.js')
+    .then(registration => console.log('Service Worker registered'))
+    .catch(err => 'Service worker registration failed'));
 }
 
 window.addEventListener('load', e => {
@@ -25,26 +25,26 @@ async function updateNewsSources() {
   const json = await response.json();
   sourceSelector.innerHTML =
     json.sources
-      .map(source => `<option value="${source.id}">${source.name}</option>`)
-      .join('\n');
+    .map(source => `<option value="${source.id}">${source.name}</option>`)
+    .join('\n');
 }
 
 async function updateNews(source = defaultSource) {
   newsArticles.innerHTML = '';
   const response = await fetch(`https://newsapi.org/v2/top-headlines?sources=${source}&sortBy=top&apiKey=${apiKey}`);
   const json = await response.json();
+  console.log('Articles fetched', json);
   newsArticles.innerHTML =
     json.articles.map(createArticle).join('\n');
 }
 
 function createArticle(article) {
   return `
-    <div class="article">
-      <a href="${article.url}">
-        <h2>${article.title}</h2>
-        <img src="${article.urlToImage}" alt="${article.title}">
-        <p>${article.description}</p>
+      <a class="story" href="${article.url}">
+        <img class="story-image" src="${article.urlToImage}" alt="${article.title}">
+        <p class="headline">${article.title}</p>
+        <p class="author">${article.author ? article.author : ''}</p>
+        <p class="description">${article.description}</p>
       </a>
-    </div>
   `;
 }
