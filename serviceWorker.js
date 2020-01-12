@@ -40,6 +40,6 @@ async function networkFirst(request) {
     return networkResponse;
   } catch (err) {
     const cachedResponse = await dynamicCache.match(request);
-    return cachedResponse || await caches.match('../fallback.json');
+    return cachedResponse || await caches.match('./fallback.json');
   }
 }
