@@ -2,8 +2,8 @@ const cacheName = 'news-v1';
 
 const staticAssets = [
   './',
-  './app.js',
-  './style.css',
+  './js/app.js',
+  './css/style.css',
   './fallback.json',
   './images/fetch-dog.jpg'
 ];
@@ -40,6 +40,6 @@ async function networkFirst(request) {
     return networkResponse;
   } catch (err) {
     const cachedResponse = await dynamicCache.match(request);
-    return cachedResponse || await caches.match('./fallback.json');
+    return cachedResponse || await caches.match('../fallback.json');
   }
 }
