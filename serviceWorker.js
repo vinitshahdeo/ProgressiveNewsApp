@@ -1,7 +1,7 @@
 const cacheName = 'news-v1';
 
 const staticAssets = [
-  "./",
+  './',
   './js/app.js',
   './css/style.css',
   './fallback.json',
