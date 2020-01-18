@@ -1,0 +1,24 @@
+{
+  "name": "progressivenewsapp",
+  "version": "1.0.0",
+  "description": "A Progressive web app powered by NewsAPI.org",
+  "main": "index.html",
+  "dependencies": {
+    "serve": "^11.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinitshahdeo/ProgressiveNewsApp.git"
+  },
+  "keywords": [
+    "pwa",
+    "news"
+  ],
+  "author": "Vinit Shahdeo <vinitshahdeo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinitshahdeo/ProgressiveNewsApp/issues"
+  },
+  "homepage": "https://github.com/vinitshahdeo/ProgressiveNewsApp#readme"
+}
