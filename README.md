@@ -1,9 +1,10 @@
 
-<img src="https://www.podfeet.com/blog/wp-content/uploads/2018/08/no-Wifi-service.png" width="100px" height="100px"/>
+<img src="./images/wifi.png" width="100px" height="100px"/>
 
 <h1>Progressive News App<sup>PWA</sup> </h1></a>
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ProgressiveNewsApp?logo=github)](https://github.com/vinitshahdeo/ProgressiveNewsApp/blob/master/LICENSE) ![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ProgressiveNewsApp?logo=javascript)
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ProgressiveNewsApp?logo=github)](https://github.com/vinitshahdeo/ProgressiveNewsApp/blob/master/LICENSE) ![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ProgressiveNewsApp?logo=javascript) 
+[![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=follow%20@vinitshahdeo&style=flat&logo=github)](https://github.com/vinitshahdeo/)
 
 **A simple Progressive Web App<sup>PWA</sup> application that brought news from a variety of sources using [News API](https://newsapi.org/).** See [demo](https://vinitshahdeo.github.io/ProgressiveNewsApp/).
 
@@ -40,5 +41,14 @@ cd ProgressiveNewsApp
 
 - [Google Developers - Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
 - [News API](https://newsapi.org/)
+
+### Author
+
+[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/0)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/0)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/1)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/1)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/2)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/2)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/3)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/3)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/4)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/4)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/5)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/5)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/6)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/6)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/7)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/7)
+
+**[Vinit Shahdeo](https://www.linkedin.com/in/vinitshahdeo/)**
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
+
 
 <sub><strong>If you find a bug or think something could be better, please file an issue! If you think a code change should be made, feel free to file a PR.</strong></sub>
