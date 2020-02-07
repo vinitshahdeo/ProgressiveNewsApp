@@ -7,6 +7,25 @@
 
 > A **Progressive Web App (PWA)** is a web app that uses modern web capabilities to deliver an app-like experience to users.
 
+### Getting started
+
+To install this project you need to clone or download it.
+
+```bash
+git clone https://github.com/vinitshahdeo/ProgressiveNewsApp/
+cd ProgressiveNewsApp
+```
+
+### Running locally
+
+- Serve folder with your server of choice. For instance by using `npm install -g serve`
+
+- Make sure you are in the same path: `cd ProgressiveNewsApp`
+
+- Run `serve .`
+
+- Browse http://localhost:5000
+
 ### Useful Resources
 
 - [Google Developers - Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
