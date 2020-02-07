@@ -4,3 +4,9 @@
 # Progressive News App
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ProgressiveNewsApp?logo=github)](https://github.com/vinitshahdeo/ProgressiveNewsApp/blob/master/LICENSE) ![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ProgressiveNewsApp?logo=javascript)
+
+> A **Progressive Web App (PWA)** is a web app that uses modern web capabilities to deliver an app-like experience to users.
+
+
+
+<sub>Feel free to raise an issue and send a PR!</sub>
