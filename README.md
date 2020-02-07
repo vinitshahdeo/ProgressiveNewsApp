@@ -32,7 +32,7 @@ cd ProgressiveNewsApp
 
 - Browse http://localhost:5000
 
-- Turn off your WiFi/Internet and see if it works :nerd_face:
+- **Turn off your WiFi/Internet and see if it works :nerd_face:**
 
 
 ### [Light House](https://developers.google.com/web/tools/lighthouse) Report
