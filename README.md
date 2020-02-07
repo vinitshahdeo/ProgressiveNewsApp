@@ -7,6 +7,9 @@
 
 > A **Progressive Web App (PWA)** is a web app that uses modern web capabilities to deliver an app-like experience to users.
 
+### Useful Resources
 
+- [Google Developers - Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
+- [News API](https://newsapi.org/)
 
 <sub>If you find a bug or think something could be better, please file an issue! If you think a code change should be made, feel free to file a PR.</sub>
