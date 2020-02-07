@@ -3,7 +3,7 @@
 
 <h1>Progressive News App<sup>PWA</sup> </h1></a>
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ProgressiveNewsApp?logo=github)](https://github.com/vinitshahdeo/ProgressiveNewsApp/blob/master/LICENSE) ![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ProgressiveNewsApp?logo=javascript) 
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ProgressiveNewsApp?logo=github)](https://github.com/vinitshahdeo/ProgressiveNewsApp/blob/master/LICENSE) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ProgressiveNewsApp?logo=javascript)](https://vinitshahdeo.github.io/ProgressiveNewsApp/)
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=follow%20@vinitshahdeo&style=flat&logo=github)](https://github.com/vinitshahdeo/)
 
 **A simple Progressive Web App<sup>PWA</sup> application that brought news from a variety of sources using [News API](https://newsapi.org/).** See [demo](https://vinitshahdeo.github.io/ProgressiveNewsApp/).
