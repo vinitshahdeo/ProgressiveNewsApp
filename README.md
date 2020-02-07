@@ -12,7 +12,7 @@
 
 ### Getting started
 
-To install [this](https://vinitshahdeo.github.io/ProgressiveNewsApp/) project, you need to clone or download it.
+To install [this](https://vinitshahdeo.github.io/ProgressiveNewsApp/) project, you need to clone or [download](https://github.com/vinitshahdeo/ProgressiveNewsApp/archive/master.zip) it.
 
 ```bash
 git clone https://github.com/vinitshahdeo/ProgressiveNewsApp.git
