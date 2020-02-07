@@ -19,8 +19,9 @@ git clone https://github.com/vinitshahdeo/ProgressiveNewsApp.git
 cd ProgressiveNewsApp
 ```
 
-> #### :desktop_computer: [Live Demo](https://vinitshahdeo.github.io/ProgressiveNewsApp/)
+<a href="https://vinitshahdeo.github.io/ProgressiveNewsApp/"><img src="./images/news.png" width="15%" height="15%"/></a>
 
+#### :desktop_computer: [Live Demo](https://vinitshahdeo.github.io/ProgressiveNewsApp/)
 
 ### Running locally
 
