@@ -51,4 +51,12 @@ cd ProgressiveNewsApp
 [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
 
 
+```javascript
+if (thisRepo.isAwesome()) {
+  // thanks in advance :p
+  starThisRepository();
+}
+
+```
+
 <sub><strong>If you find a bug or think something could be better, please file an issue! If you think a code change should be made, feel free to raise a PR.</strong></sub>
