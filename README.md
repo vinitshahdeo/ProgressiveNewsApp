@@ -32,9 +32,9 @@ cd ProgressiveNewsApp
 - Browse http://localhost:5000
 
 
-### Light House Report
+### [Light House](https://developers.google.com/web/tools/lighthouse) Report
 
-![Lighthouse report](./images/lighthouse.png)
+![Lighthouse report](./images/light-house.png)
 
 ### Useful Resources
 
