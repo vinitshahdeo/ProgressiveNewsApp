@@ -51,4 +51,4 @@ cd ProgressiveNewsApp
 [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
 
 
-<sub><strong>If you find a bug or think something could be better, please file an issue! If you think a code change should be made, feel free to file a PR.</strong></sub>
+<sub><strong>If you find a bug or think something could be better, please file an issue! If you think a code change should be made, feel free to raise a PR.</strong></sub>
