@@ -19,7 +19,7 @@ git clone https://github.com/vinitshahdeo/ProgressiveNewsApp.git
 cd ProgressiveNewsApp
 ```
 
-> #### [Live Demo](https://vinitshahdeo.github.io/ProgressiveNewsApp/)
+> #### :desktop_computer: [Live Demo](https://vinitshahdeo.github.io/ProgressiveNewsApp/)
 
 
 ### Running locally
@@ -32,7 +32,7 @@ cd ProgressiveNewsApp
 
 - Browse http://localhost:5000
 
-- Turn off your WiFi/Internet and see if it works :p
+- Turn off your WiFi/Internet and see if it works :nerd_face:
 
 
 ### [Light House](https://developers.google.com/web/tools/lighthouse) Report
