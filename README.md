@@ -9,4 +9,4 @@
 
 
 
-<sub>Feel free to raise an issue and send a PR!</sub>
+<sub>If you find a bug or think something could be better, please file an issue! If you think a code change should be made, feel free to file a PR.</sub>
