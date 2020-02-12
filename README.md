@@ -53,8 +53,6 @@ cd ProgressiveNewsApp
 
 <a href="https://twitter.com/Vinit_Shahdeo"><img src="images/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="images/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="images/linkedin.png" width="32px" height="32px"></a>
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
-
 
 ```javascript
 if (thisRepo.isAwesome()) {
@@ -65,3 +63,6 @@ if (thisRepo.isAwesome()) {
 ```
 
 <sub><strong>If you find a bug or think something could be better, please file an issue! If you think a code change should be made, feel free to raise a PR.</strong></sub>
+
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/vinitshahdeo) [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
+
