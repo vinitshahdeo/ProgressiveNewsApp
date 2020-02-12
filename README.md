@@ -51,6 +51,8 @@ cd ProgressiveNewsApp
 
 **[Vinit Shahdeo](https://www.linkedin.com/in/vinitshahdeo/)**
 
+<a href="https://twitter.com/Vinit_Shahdeo"><img src="images/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="images/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="images/linkedin.png" width="32px" height="32px"></a>
+
 [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo) 
 
 
