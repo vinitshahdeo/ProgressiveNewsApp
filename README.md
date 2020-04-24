@@ -44,6 +44,11 @@ cd ProgressiveNewsApp
 - [Google Developers - Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
 - [News API](https://newsapi.org/)
 
+### Recommended Reading
+
+- [PWAs - Future of Mobile Web Browsing](https://www.wildnettechnologies.com/progressive-web-apps-prime-time-to-change/)
+- [How is Progressive Web App different from Regular Web App?](https://www.websitepulse.com/blog/progressive-web-app-different-from-regular-web-app)
+
 ### Author
 
 [![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/0)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/0)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/1)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/1)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/2)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/2)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/3)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/3)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/4)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/4)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/5)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/5)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/6)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/6)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/images/7)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ProgressiveNewsApp/links/7)
