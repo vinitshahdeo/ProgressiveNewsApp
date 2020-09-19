@@ -3,35 +3,35 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
 body {
     margin: 0 auto;
-    background-color: #999999
-        /*whitesmoke*/
-    ;
+    background-color:white;
+    /*whitesmoke*/
     text-align: center;
 }
-
 p {
     font-family: 'Public Sans', sans-serif;
 }
-
 header {
-    background-color: #5A83F5;
-    color: white;
+    color: #17141d;
     height: 150px;
     width: 100%;
-    text-shadow: 2px 2px 8px black;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: aliceblue;
 }
 
 header h1 {
-    font-family: 'Righteous', cursive;
-    font-size: 45px;
+    font-family: 'Public Sans', sans-serif;
+    color: #17141d;
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px rgb(188, 192, 194);
 }
 
 header h3 {
     font-family: 'Heebo', sans-serif;
-    font-size: 18px;
+    font-size: 1.3rem;
+    padding-top: 0.7rem;
     margin: 5px;
 }
 
@@ -53,7 +53,8 @@ header h3 {
 
 #news-selector {
     font-size: 20px;
-    width: 225px
+    width: 225px;
+    border-radius: 5px;
 }
 
 .story-section {
@@ -67,13 +68,18 @@ header h3 {
     transition: opacity 1s;
 }
 
+.description:hover {
+    color: black;
+    transition: 0.2s;
+}
+
 .visible {
     opacity: 1.0;
 }
 
 .story {
-    background-color: ivory;
-    color: black;
+    background-color: #F2F2F2;
+    color: white;
     width: 300px;
     /*300px*/
     height: auto;
@@ -83,17 +89,20 @@ header h3 {
     flex-direction: column;
     /* justify-content: space-around; */
     /* align-items: center; */
-    border-radius: 1px;
+    border-radius: 13px;
     transition: .75s;
+    padding: 0.1rem;
 }
 
 .story:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-1rem);
 }
 
 .story-image {
     width: 300px;
     /* Original 300*/
+    border-radius: 13px;
     height: 200px;
     /*Original 200*/
 }
@@ -124,7 +133,7 @@ a {
 }
 
 .author {
-    font-weight: lighter;
+    color: #17141d;
     padding: 5px;
     margin: 0;
 }
@@ -132,23 +141,25 @@ a {
 .description {
     color: gray;
     padding: 5px;
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+
 
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#5A83F5;
+    background-color: #5A83F5;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     color: white;
     text-align: center;
- }
+}
 
- .footer a{
-     color: white;
- }
+.footer a {
+    color: white;
+}
