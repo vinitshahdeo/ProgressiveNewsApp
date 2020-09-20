@@ -1,22 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
 body {
     margin: 0 auto;
-    background-color: #999999
-        /*whitesmoke*/
-    ;
+    background-color: #999999 /*whitesmoke*/;
     text-align: center;
 }
 
 p {
-    font-family: 'Public Sans', sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
 
 header {
-    background-color: #5A83F5;
+    background-color: #5a83f5;
     color: white;
     height: 150px;
     width: 100%;
@@ -25,12 +23,12 @@ header {
 }
 
 header h1 {
-    font-family: 'Righteous', cursive;
+    font-family: "Righteous", cursive;
     font-size: 45px;
 }
 
 header h3 {
-    font-family: 'Heebo', sans-serif;
+    font-family: "Heebo", sans-serif;
     font-size: 18px;
     margin: 5px;
 }
@@ -53,7 +51,7 @@ header h3 {
 
 #news-selector {
     font-size: 20px;
-    width: 225px
+    width: 225px;
 }
 
 .story-section {
@@ -68,7 +66,7 @@ header h3 {
 }
 
 .visible {
-    opacity: 1.0;
+    opacity: 1;
 }
 
 .story {
@@ -84,11 +82,11 @@ header h3 {
     /* justify-content: space-around; */
     /* align-items: center; */
     border-radius: 1px;
-    transition: .75s;
+    transition: 0.75s;
 }
 
 .story:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .story-image {
@@ -104,12 +102,12 @@ a {
 
 .headline {
     padding: 5px;
-    color: #5A83F5;
+    color: #5a83f5;
     font-weight: 800;
 }
 
 .space {
-    background-color: #5A83F5;
+    background-color: #5a83f5;
     width: 300px;
     height: 200px;
     display: flex;
@@ -121,6 +119,15 @@ a {
     color: white;
     font-size: 38px;
     text-shadow: 2px 2px 8px black;
+}
+
+.date {
+    font-weight: lighter;
+    padding: 5px;
+    margin: 0;
+    font-size: 10px;
+    color: gray;
+    font-family: "Public Sans", sans-serif;
 }
 
 .author {
@@ -142,13 +149,13 @@ a {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#5A83F5;
+    background-color: #5a83f5;
     padding: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: white;
     text-align: center;
- }
+}
 
- .footer a{
-     color: white;
- }
+.footer a {
+    color: white;
+}
