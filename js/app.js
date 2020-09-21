@@ -40,7 +40,7 @@ async function updateNewsSources() {
     .join('\n');
 }
 
-async function updateNews(source = defaultSource,sortby = 'top') {
+async function updateNews(source = defaultSource,sortby = defaultSortby) {
   newsArticles.innerHTML = '';
   const response = await fetch(`https://newsapi.org/v2/everything?sources=${source}&sortBy=${sortby}&apiKey=${apiKey}`);
   const json = await response.json();
