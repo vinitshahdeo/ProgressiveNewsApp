@@ -17,15 +17,15 @@ self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());
 });
 
-// self.addEventListener('fetch', event => {
-//   const request = event.request;
-//   const url = new URL(request.url);
-//   if (url.origin === location.origin) {
-//     event.respondWith(cacheFirst(request));
-//   } else {
-//     event.respondWith(networkFirst(request));
-//   }
-// });
+self.addEventListener('fetch', event => {
+  const request = event.request;
+  const url = new URL(request.url);
+  if (url.origin === location.origin) {
+    event.respondWith(cacheFirst(request));
+  } else {
+    event.respondWith(networkFirst(request));
+  }
+});
 
 async function cacheFirst(request) {
   const cachedResponse = await caches.match(request);
