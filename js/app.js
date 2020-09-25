@@ -45,6 +45,7 @@ function createArticle(article) {
         <p class="headline">${article.title}</p>
         <p class="author">${article.author ? article.author : ''}</p>
         <p class="description">${article.description}</p>
+        <footer class="story-footer">${new Date(article.publishedAt).toLocaleString()}</footer>
       </a>
   `;
 }
