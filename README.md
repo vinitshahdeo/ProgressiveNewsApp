@@ -22,6 +22,10 @@ cd ProgressiveNewsApp
 
 #### :desktop_computer: [Live Demo](https://vinitshahdeo.github.io/ProgressiveNewsApp/)
 
+### Where to get an API key
+
+- Go to the - [news API website](https://newsapi.org) and sign up for an API key
+
 ### Running locally
 
 - Serve folder with your server of choice. For instance by using `npm install -g serve`
