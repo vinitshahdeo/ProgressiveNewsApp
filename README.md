@@ -26,6 +26,8 @@ cd ProgressiveNewsApp
 
 - Go to the [news API website](https://newsapi.org) and sign up for an API key
 
+- Copy your API key into line 1 of app.js
+
 ### Running locally
 
 - Serve folder with your server of choice. For instance by using `npm install -g serve`
