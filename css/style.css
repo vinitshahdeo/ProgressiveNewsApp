@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 body {
     margin: 0 auto;
-    background-color: #999999
-        /*whitesmoke*/
-    ;
+    background-color: #DECDC3;
     text-align: center;
 }
 
@@ -16,7 +13,7 @@ p {
 }
 
 header {
-    background-color: #5A83F5;
+    background-color: #2D4059;
     color: white;
     height: 150px;
     width: 100%;
@@ -25,13 +22,13 @@ header {
 }
 
 header h1 {
-    font-family: 'Righteous', cursive;
+    font-family: 'Paytone One', sans-serif;
     font-size: 45px;
 }
 
 header h3 {
-    font-family: 'Heebo', sans-serif;
-    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
     margin: 5px;
 }
 
@@ -53,7 +50,8 @@ header h3 {
 
 #news-selector {
     font-size: 20px;
-    width: 225px
+    width: 225px;
+    border:white solid;
 }
 
 .story-section {
@@ -83,7 +81,7 @@ header h3 {
     flex-direction: column;
     /* justify-content: space-around; */
     /* align-items: center; */
-    border-radius: 1px;
+    border-radius: 20px 20px 30px 30px;
     transition: .75s;
 }
 
@@ -92,10 +90,12 @@ header h3 {
 }
 
 .story-image {
-    width: 300px;
+    width: 295px;
     /* Original 300*/
     height: 200px;
     /*Original 200*/
+    border-radius: 20px 20px 0px 0px;
+    border: white solid;
 }
 
 a {
@@ -109,7 +109,7 @@ a {
 }
 
 .space {
-    background-color: #5A83F5;
+    background-color: #2D4059;
     width: 300px;
     height: 200px;
     display: flex;
@@ -142,7 +142,7 @@ a {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#5A83F5;
+    background-color:#2D4059 ;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     color: white;

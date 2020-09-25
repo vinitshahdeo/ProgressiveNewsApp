@@ -1,4 +1,4 @@
-const apiKey = 'XXXXXXXXXXXX'; // Get API key from NewsAPI.org
+const apiKey = '73b9651e38044bd1862834edc2f9567d'; // Get API key from NewsAPI.org
 const defaultSource = 'the-hindu'; // default source of news
 const sourceSelector = document.querySelector('#news-selector');
 const newsArticles = document.querySelector('#news-list');
