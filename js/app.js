@@ -1,6 +1,7 @@
-const apiKey = 'XXXXXXXXXXXX'; // Get API key from NewsAPI.org
+const apiKey = '39878dbfdb794811a9d79aabaddec440'; // Get API key from NewsAPI.org
 const defaultSource = 'the-hindu'; // default source of news
 const sourceSelector = document.querySelector('#news-selector');
+const sortSelector = document.querySelector('#sort-news');
 const newsArticles = document.querySelector('#news-list');
 
 if ('serviceWorker' in navigator) {
@@ -12,6 +13,7 @@ if ('serviceWorker' in navigator) {
 
 window.addEventListener('load', e => {
   sourceSelector.addEventListener('change', evt => updateNews(evt.target.value));
+  sortSelector.addEventListener('change', evt => sortNews(evt.target.value));
   updateNewsSources().then(() => {
     sourceSelector.value = defaultSource;
     updateNews();
@@ -36,6 +38,15 @@ async function updateNews(source = defaultSource) {
   console.log('Articles fetched', json);
   newsArticles.innerHTML =
     json.articles.map(createArticle).join('\n');
+}
+
+async function sortNews(sortBy) {
+  newsArticles.innerHTML = '';
+  const source = sourceSelector.value;
+  const response = await fetch(`https://newsapi.org/v2/everything?sources=${source}&sortBy=${sortBy}&apiKey=${apiKey}`);
+  const json = await response.json();
+  console.log('Sorted Articles', json);
+  newsArticles.innerHTML = json.articles.map(createArticle).join('\n');
 }
 
 function createArticle(article) {

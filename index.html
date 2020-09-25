@@ -21,6 +21,12 @@
   </header>
   <main class="display-area">
     <select id="news-selector"></select>
+    <select id="sort-news">
+      <option value="" disabled selected hidden>Sort by</option>
+      <option value="publishedAt">Date Published</option>
+      <option value="relevancy">Relevancy</option>
+      <option value="popularity">Popularity</option>
+    </select>
     <div class="story-section visible" id="news-list"></div>
   </main>
   <div class="footer">

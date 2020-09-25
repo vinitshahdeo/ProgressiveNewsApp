@@ -56,6 +56,10 @@ header h3 {
     width: 225px
 }
 
+#sort-news {
+    font-size: 20px;
+}
+
 .story-section {
     display: flex;
     flex-direction: row;
