@@ -1,7 +1,7 @@
 
 <img src="./images/wifi.png" width="100px" height="100px"/>
 
-<h1>Progressive News App<sup>PWA</sup> </h1></a>
+<h1>Progressive News App </h1></a>
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ProgressiveNewsApp?logo=github)](https://github.com/vinitshahdeo/ProgressiveNewsApp/blob/master/LICENSE) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ProgressiveNewsApp?logo=javascript)](https://vinitshahdeo.github.io/ProgressiveNewsApp/) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/ProgressiveNewsApp?color=yellow&logo=github)](https://github.com/vinitshahdeo/)
 
