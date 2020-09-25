@@ -24,7 +24,7 @@ cd ProgressiveNewsApp
 
 ### Where to get an API key
 
-- Go to the - [news API website](https://newsapi.org) and sign up for an API key
+- Go to the [news API website](https://newsapi.org) and sign up for an API key
 
 ### Running locally
 
