@@ -1,4 +1,4 @@
-const apiKey = 'XXXXXXXXXXXX'; // Get API key from NewsAPI.org
+const apiKey = 'XXXXXXXXXXXXXXXXXX'; // Get API key from NewsAPI.org
 const defaultSource = 'the-hindu'; // default source of news
 const sourceSelector = document.querySelector('#news-selector');
 const newsArticles = document.querySelector('#news-list');
@@ -39,6 +39,8 @@ async function updateNews(source = defaultSource) {
 }
 
 function createArticle(article) {
+  let dt = new Date(article.publishedAt)
+  let datestring = dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear();
   return `
       <a class="story" href="${article.url}">
         <img class="story-image" src="${article.urlToImage}" alt="${article.title}">
