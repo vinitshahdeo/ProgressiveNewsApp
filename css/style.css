@@ -35,6 +35,8 @@ header h3 {
     margin: 5px;
 }
 
+
+
 .container {
     text-align: center;
     position: relative;
@@ -151,4 +153,5 @@ a {
 
  .footer a{
      color: white;
+     text-align: center;
  }
