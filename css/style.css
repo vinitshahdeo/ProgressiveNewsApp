@@ -1,154 +1,426 @@
-@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
-body {
-    margin: 0 auto;
-    background-color: #999999
-        /*whitesmoke*/
-    ;
-    text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;400&display=swap");
+
+/*===================== TABLE OF CONTENTS ===================================
+
+1. GENERAL
+2. Font Families
+3. Container & Wrappers
+4. News Selector
+5. Story Card
+  - 5.1 Story Card: Header Wrapper section
+  - 5.2 Story Card: Body Wrapper section
+6. Footer
+7. Responsive
+8. Classes not used
+
+===================================================================================*/
+
+/*==================================
+1. GENERAL
+===================================*/
+
+:root {
+  --primary-color: #a667e1;
+  --accent-color: #8a2be2; /*hex of blueviolet*/
+  --margin-card: 1rem;
+  --card-width: 400px;
+
+  --font-family-1: "Public Sans", sans-serif;
+  --font-family-2: "Righteous", cursive;
+  --font-family-3: "Heebo", sans-serif;
+  --font-family-4: "Newsreader", sans-serif;
+  --font-family-5: "Open Sans", sans-serif;
+
+  --font-size-sm-1: 1rem; /*or 16px*/
+  --font-size-sm-2: 1.125rem; /*or 18px*/
+  --font-size-sm-3: 1.25rem; /*or 20px*/
+  --font-size-md-1: 1.5rem; /*or 22.4px*/
+  --font-size-lg-1: 2.5rem; /*or 40px*/
+  --font-size-lg-2: 2.8rem; /*or 44.8px*/
+
+  --box-shadow-1: 0 0 4px rgb(0 0 0 / 19%), 0 0 6px rgb(0 0 0 / 23%);
+  --box-shadow-2: 0 1px 3px rgba(0, 0, 0, 0.19), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow-3: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --box-shadow-4: 0 0 4px rgb(0 0 0 / 60%);
+
+  --transition: 250ms;
 }
 
-p {
-    font-family: 'Public Sans', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  text-align: center;
 }
 
 header {
-    background-color: #5A83F5;
-    color: white;
-    height: 150px;
-    width: 100%;
-    text-shadow: 2px 2px 8px black;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: white;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: auto;
+  box-shadow: var(--box-shadow);
 }
 
 header h1 {
-    font-family: 'Righteous', cursive;
-    font-size: 45px;
+  font-size: var(--font-size-lg-2);
 }
 
 header h3 {
-    font-family: 'Heebo', sans-serif;
-    font-size: 18px;
-    margin: 5px;
+  font-size: var(--font-size-sm-2);
+  margin: 5px;
 }
+/*===================== END GENERAL===================================*/
 
+/*==================================
+2. Font Families
+===================================*/
+header h1 {
+  font-family: var(--font-family-2);
+}
+header h3 {
+  font-family: var(--font-family-3);
+}
+p {
+  font-family: var(--font-family-1);
+}
+.headline {
+  font-family: var(--font-family-4);
+}
+.description {
+  font-family: var(--font-family-5);
+}
+.footer {
+  font-family: var(--font-family-5);
+}
+/*=====================END Font Families================================*/
+
+/*==================================
+3. Container & Wrappers
+===================================*/
 .container {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .display-area {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-#news-selector {
-    font-size: 20px;
-    width: 225px
+.news-selector-wrapper {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+  background: rgb(138 43 226 / 50%);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--box-shadow);
 }
 
 .story-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    opacity: 0;
-    transition: opacity 1s;
+  width: 100%;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transition: opacity var(--transition);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 2rem;
 }
 
 .visible {
-    opacity: 1.0;
+  opacity: 1;
+}
+
+/*=====================END Container & Wrappers================================*/
+
+/*====================================
+4. News Selector
+====================================*/
+
+#news-selector {
+  font-size: var(--font-size-sm-3);
+  border-radius: 5px;
+  border: 2px solid var(--accent-color);
+  background: #ffffff;
+  padding: 0.5rem;
+  min-width: max-content;
+}
+
+#news-selector:focus-visible {
+  color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  outline-color: var(--accent-color);
+}
+/*=====================END News Selector================================*/
+
+/*================================
+5. Story Card
+================================*/
+a {
+  text-decoration: none;
 }
 
 .story {
-    background-color: ivory;
-    color: black;
-    width: 300px;
-    /*300px*/
-    height: auto;
-    margin: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19), 0 1px 2px rgba(0, 0, 0, 0.24);
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    border-radius: 1px;
-    transition: .75s;
+  position: relative;
+  background-color: ivory;
+  color: black;
+  width: inherit;
+  height: auto;
+  margin: 10px;
+  box-shadow: var(--box-shadow-2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: var(--transition);
+  align-self: stretch;
+  text-align: center;
 }
 
 .story:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: var(--box-shadow-3);
 }
 
+.story p {
+  padding: 0 1rem;
+}
+
+/*======================================
+5.1 Story Card: Header Wrapper section
+=======================================*/
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  border-radius: inherit;
+  flex-direction: column;
+}
+
+.header-wrapper::after {
+  transform-origin: top;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.story:hover .header-wrapper::after {
+  transform: scaleY(1);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/*=====================Image================================*/
 .story-image {
-    width: 300px;
-    /* Original 300*/
-    height: 200px;
-    /*Original 200*/
+  width: inherit;
+  /* Original 300*/
+  height: 200px;
+  /*Original 200*/
+  min-height: 200px;
+  border-radius: inherit;
+  object-fit: cover;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
+/*=====================Headline================================*/
 .headline {
-    padding: 5px;
-    color: #5A83F5;
-    font-weight: 800;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 5% 1rem !important;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #ffffff;
+  background: rgb(138 43 226 / 10%);
+  backdrop-filter: blur(1px);
+  text-align: end;
+  font-size: var(--font-size-md-1);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.8rem;
+  transition: var(--transition);
 }
 
-.space {
-    background-color: #5A83F5;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.headline p {
+  transition: var(--transition);
+  font-family: inherit;
+  flex: 1;
+  text-shadow: var(--box-shadow-4);
 }
 
-.placeholder-title {
-    color: white;
-    font-size: 38px;
-    text-shadow: 2px 2px 8px black;
+.story:hover .headline {
+  width: 100%;
+  transition: var(--transition);
+  z-index: 1;
 }
 
+.story:hover .headline p {
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: var(--transition);
+}
+
+/*===================================
+5.2 Story Card: Body Wrapper section
+====================================*/
+.body-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: inherit;
+  flex-direction: column;
+}
+
+.story:hover .body-wrapper {
+  width: 100%;
+  z-index: 1;
+}
+
+.body-wrapper::after {
+  transform-origin: bottom;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 2px solid var(--accent-color);
+}
+.story:hover .body-wrapper::after {
+  transform: scaleY(1);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.header-wrapper::after,
+.body-wrapper::after {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgb(138 43 226 / 45%);
+  backdrop-filter: blur(3px);
+  transform: scaleY(0);
+  transition: transform var(--transition) ease;
+}
+
+/*=====================Author================================*/
 .author {
-    font-weight: lighter;
-    padding: 5px;
-    margin: 0;
+  font-weight: bold;
+  padding: 5px;
+  font-size: var(--font-size-sm-3);
+  margin: 1rem auto;
 }
 
+.story:hover .author {
+  z-index: 1;
+  text-align: center;
+  transition: 250ms;
+  font-size: var(--font-size-md-1);
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+}
+/*=====================Description================================*/
 .description {
-    color: gray;
-    padding: 5px;
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 15px;
+  color: gray;
+  padding: 5px;
+  font-size: var(--font-size-sm-1);
+  margin-top: 0;
+  margin-bottom: var(--margin-card);
+  flex-basis: 100%;
+  flex: 1;
+  overflow: hidden;
+  line-height: 1.3rem;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#5A83F5;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    text-align: center;
- }
+/*=====================END Story Card================================*/
 
- .footer a{
-     color: white;
- }
+/*==================================
+6. Footer
+===================================*/
+.footer {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.footer a {
+  color: white;
+}
+/*=====================END Footer================================*/
+
+/*====================================
+7. Responsive
+====================================*/
+@media (max-width: 500px) {
+  .story-section {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+/*=====================END Responsive================================*/
+
+/*================================
+8. Classes not used
+================================*/
+
+/*
+.space {
+  background-color: #5a83f5;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+*/
+/*
+.placeholder-title {
+  color: white;
+  font-size: var(--font-size-lg-1);
+  text-shadow: 2px 2px 8px black;
+}
+*/
