@@ -41,10 +41,16 @@ async function updateNews(source = defaultSource) {
 function createArticle(article) {
   return `
       <a class="story" href="${article.url}">
-        <img class="story-image" src="${article.urlToImage}" alt="${article.title}">
-        <p class="headline">${article.title}</p>
-        <p class="author">${article.author ? article.author : ''}</p>
-        <p class="description">${article.description}</p>
+        <div class="header-wrapper">
+          <img class="story-image" src="${article.urlToImage}" alt="${article.title}">
+          <div class="headline">
+            <p class="headline">${article.title}</p>
+          </div>
+        </div>
+        <div class="body-wrapper">
+          <p class="author">${article.author ? article.author : ''}</p>
+          <p class="description">${article.description}</p>
+        </div>
       </a>
   `;
 }
