@@ -137,6 +137,10 @@ a {
     margin-bottom: 15px;
 }
 
+.published-date {
+    margin-left: auto;
+}
+
 .footer {
     position: fixed;
     left: 0;
