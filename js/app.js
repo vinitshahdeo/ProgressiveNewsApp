@@ -1,4 +1,4 @@
-const apiKey = 'fb60b6d8bbc042f4a830bbc189a44805'; // Get API key from NewsAPI.org
+const apiKey = 'XXXXXXXXXXXXX'; // Get API key from NewsAPI.org
 const defaultSource = 'the-hindu'; // default source of news
 const sourceSelector = document.querySelector('#news-selector');
 const newsArticles = document.querySelector('#news-list');
@@ -45,14 +45,15 @@ function createArticle(article) {
         <p class="headline">${article.title}</p>
         <p class="author">${article.author ? article.author : ''}</p>
         <p class="description">${article.description}</p>
-        <p class="published-date">${parseDate(article.publishedAt)}</p> 
+        <p class="published-date"><span>${"published on " + parseDate(article.publishedAt)}</span></p> 
       </a>
   `;
 }
 
 function parseDate(dateString) {
+  const options = {
+    year: 'numeric', month: 'short', day: 'numeric'
+  };
   const date = new Date(dateString);
-  // TODO: remove api key after use
-  // TODO: add month as string value and styling 
-  return `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`;
+  return `${date.toLocaleDateString('en-US', options)}`;
 }

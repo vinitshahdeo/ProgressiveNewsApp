@@ -85,6 +85,7 @@ header h3 {
     /* align-items: center; */
     border-radius: 1px;
     transition: .75s;
+    position: relative;
 }
 
 .story:hover {
@@ -138,7 +139,16 @@ a {
 }
 
 .published-date {
-    margin-left: auto;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0.5rem;
+}
+
+.published-date span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem;
 }
 
 .footer {
